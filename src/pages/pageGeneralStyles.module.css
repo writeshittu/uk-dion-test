@@ -1,0 +1,81 @@
+.page_holder {
+  display: flex;
+  min-height: 100vh;
+}
+.business_logo {
+  width: 90px;
+  /* height: 60px; */
+}
+.leftside_section {
+  flex: 50%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 20px;
+  flex-direction: column;
+}
+
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input_withIcon {
+  position: relative;
+}
+.input_Icon {
+  position: absolute;
+  top: 45px;
+  width: 35px;
+  right: 20px;
+  cursor: pointer;
+}
+.textTitle {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.02em;
+  padding: 8px 0;
+  color: var(--title-text-color);
+}
+.subtext {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: var(--Text-Body-color);
+  opacity: 0.5;
+}
+
+.input_container {
+  margin: 30px 0 15px 0;
+}
+.forgotPassword_text {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+.reset_icon {
+  display: none;
+}
+.BTN_holder {
+  margin: 30px 0;
+}
+.rightside_section {
+  flex: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  .rightside_section {
+    display: none;
+  }
+  .reset_icon {
+    width: 30px;
+    display: block;
+  }
+  .business_logo {
+    display: none;
+  }
+}

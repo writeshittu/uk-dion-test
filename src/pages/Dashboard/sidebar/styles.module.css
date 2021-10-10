@@ -1,0 +1,34 @@
+.sidebar_section {
+  background: var(--title-text-color);
+  padding: 30px;
+  min-height: 110vh;
+  width: 20%;
+
+  /* position: fixed; */
+}
+
+.business_logo {
+  width: 100px;
+}
+.sidebar_items {
+  padding: 5px 15px;
+  margin: 10px 0;
+}
+.sidebar_items > a {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.active {
+  color: #ffffff;
+  opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar_section {
+    display: none;
+  }
+}

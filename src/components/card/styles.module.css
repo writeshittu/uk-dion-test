@@ -1,0 +1,85 @@
+.card_holder {
+  position: relative;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0px 16px 48px rgba(19, 23, 62, 0.25);
+  border-radius: 16px;
+  /* width: 300px; */
+  padding: 25px 30px;
+}
+.holder_withprops {
+  position: relative;
+  background: #ffffff;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid rgba(80, 92, 164, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 72px rgba(80, 92, 164, 0.15);
+  border-radius: 8px;
+  /* width: 300px; */
+  padding: 20px;
+}
+.card_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  color: var(--title-text-color);
+}
+.title_withprops {
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  color: var(--title-text-color);
+  font-size: 17px;
+  line-height: 23px;
+}
+.subtext {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  padding: 10px 0;
+  opacity: 0.5;
+}
+.medal_icon {
+  position: absolute;
+  right: -23px;
+  top: 140px;
+  padding: 8px;
+  width: 55px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+.medal_ontop {
+  margin-right: 4px;
+  width: 35px;
+  border: 0px;
+  border-radius: 0px;
+}
+.card_image {
+  width: 120px;
+  margin: 20px auto;
+  border: 5px #babfde solid;
+  border-radius: 3.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .card_holder {
+    width: 300px;
+    padding: 25px 30px;
+  }
+  .holder_withprops {
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
