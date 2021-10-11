@@ -1,20 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import styles from "./styles.module.css";
 import { logoutUser } from "../../../Services/LogoutService";
-import Cookies from "js-cookie";
 
 const Sidebar = () => {
   // eslint-disable-next-line
-  const [logStatus, setlogStatus] = useState(0);
   const history = useHistory();
 
   const LogOut = async () => {
-    await logoutUser(setlogStatus);
-    // if (logStatus === 200) {
-    Cookies.remove("accessToken");
+    await logoutUser();
     history.push("/");
-    // }
   };
 
   return (

@@ -30,6 +30,10 @@ const ResetPassword = () => {
       formIsValid = false;
       errors["password"] = "please input new password";
     }
+    if (user.password.length < 8) {
+      formIsValid = false;
+      errors["password"] = "The password must be at least 8 characters.";
+    }
     if (!user.password_confirmation) {
       formIsValid = false;
       errors["password_confirmation"] = "please confirm new Password";
@@ -43,8 +47,7 @@ const ResetPassword = () => {
   };
 
   const onLoginSuccess = (status) => {
-    console.log("sds");
-    if (status === 200) {
+    if (status === 202) {
       history.push("/successful");
     } else {
       setErrors(status);
@@ -100,6 +103,7 @@ const ResetPassword = () => {
                   label="password"
                   type={showPassword ? "text" : "password"}
                   name="password"
+                  autoComplete="password"
                   error={errors["password"]}
                   required
                   onChange={handleOnChange}
@@ -123,6 +127,7 @@ const ResetPassword = () => {
                   label="Confirm Password"
                   type={showPassword ? "text" : "password"}
                   name="password_confirmation"
+                  autoComplete="password"
                   onChange={handleOnChange}
                   required
                   error={errors["password_confirmation"]}

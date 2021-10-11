@@ -31,8 +31,8 @@ const LoginPage = () => {
   };
 
   const onSuccess = (status) => {
-    if (status === 200) {
-      history.push("/dashboard");
+    if (status === 202) {
+      history.push("/reset-password");
     } else {
       setErrors(status);
       setLoading(false);
@@ -72,6 +72,7 @@ const LoginPage = () => {
                 label="Work Email"
                 onChange={handleOnChange}
                 type="text"
+                autoComplete="email"
                 required
               />
             </div>

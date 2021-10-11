@@ -1,6 +1,7 @@
 import styles from "./styles.module.css";
 import FormInput from "../../../components/form-input/form-input.component";
 import BestEmployeeCard from "../../../components/card/";
+import Cookies from "js-cookie";
 
 const DashboardContent = () => {
   return (
@@ -26,7 +27,7 @@ const DashboardContent = () => {
               />
             </div>
             <div className={`${styles.userLabel} ${styles.section_item_BGRND}`}>
-              <p>Gloria A.</p>
+              <p>{Cookies.get("username")}</p>
               <div className={styles.userImage}>
                 <img
                   src="./icons/userImage.svg"
@@ -53,7 +54,9 @@ const DashboardContent = () => {
           >
             <div className={styles.date}>
               <p>Monday, 10:38 AM</p>
-              <p className={styles.greeting}>Good Morning, Gloria!</p>
+              <p className={styles.greeting}>
+                Good Morning, {Cookies.get("username")}!
+              </p>
             </div>
             <div className={styles.weatherIcon}>
               <img src="./icons/weather.svg" alt="weather icon" width="100%" />

@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import * as ROUTES from "./constants/Routes";
 import NotFoundpage from "./pages/errorPage";
 import LoginPage from "./pages/LoginPage";
-import ConfirmPasswordChange from "./pages/confirmPasswordChange";
+import ConfirmPasswordChange from "./pages/forgotPasswordChange";
 import ResetPassword from "./pages/resetPasswordPage";
 import SuccessfulPasswordChange from "./pages/OnSuccessfulPasswordChange";
 import Dashboard from "./pages/Dashboard";
