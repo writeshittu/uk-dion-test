@@ -426,3 +426,16 @@
     opacity: 0.5;
   }
 }
+@media screen and (min-width: 1400px) {
+  .mainSection {
+    width: 1870px;
+    padding: 70px;
+  }
+  .moment_container,
+  .quote_box {
+    width: 950px;
+  }
+  .searchInput {
+    width: 950px;
+  }
+}

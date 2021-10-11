@@ -17,7 +17,7 @@ const Sidebar = () => {
       <Link to="/" className={styles.business_logo}>
         <img src="./icons/uk-dion_logo.svg" alt="business_logo" width="95px" />
       </Link>
-      <div>
+      <div className={styles.items_container}>
         <ul style={{ marginTop: "50px" }}>
           <li className={styles.sidebar_items}>
             <Link to="/dashboard" style={{ opacity: "1" }}>
@@ -37,7 +37,7 @@ const Sidebar = () => {
             <Link to="/dashboard">Leave management</Link>
           </li>
         </ul>
-        <ul style={{ marginTop: "100px" }}>
+        <ul>
           <li className={styles.sidebar_items}>
             <Link to="/dashboard">My account</Link>
           </li>
