@@ -129,7 +129,9 @@ const LoginPage = () => {
             >
               Forgot password ?
             </Link>
-            <p style={{ fontSize: "0.75rem", color: "red" }}>
+            <p
+              style={{ fontSize: "0.75rem", color: "red", textAlign: "center" }}
+            >
               {errors["message"]}
             </p>
             <ActionButton>{loading ? "loading.." : "Log in"}</ActionButton>

@@ -19,7 +19,7 @@ export const loginUser = async (userData, callBackFunction) => {
     callBackFunction(response.status);
     // console.log(response);
   } catch (err) {
-    console.log(err.response);
+    // console.log(err.response);
     // if (err.response.status === 422) {
 
     // }

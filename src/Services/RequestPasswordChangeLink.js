@@ -15,12 +15,10 @@ export const RequestPasswordresetLink = async (userData, callBackFunction) => {
       config.headers
     );
     callBackFunction(response.status);
-    console.log(response);
+    // console.log(response);
   } catch (err) {
-    console.log(err.response);
-    // if (err.response.status === 422) {
+    // console.log(err.response);
 
-    // }
     callBackFunction(err.response.data);
   }
 };

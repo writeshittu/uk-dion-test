@@ -1,8 +1,10 @@
 import ActionButton from "../components/customButton";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import LabelSection from "../components/RightSideLabelWithCard";
 import styles from "./pageGeneralStyles.module.css";
 const LoginPage = () => {
+  const history = useHistory();
+
   return (
     <section className={styles.page_holder}>
       <aside className={styles.leftside_section}>
@@ -29,7 +31,13 @@ const LoginPage = () => {
             </p>
 
             <div className={styles.BTN_holder}>
-              <ActionButton>Proceed to login</ActionButton>
+              <ActionButton
+                onClick={() => {
+                  history.push("/");
+                }}
+              >
+                Proceed to login
+              </ActionButton>
             </div>
           </div>
         </div>

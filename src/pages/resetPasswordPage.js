@@ -44,12 +44,12 @@ const ResetPassword = () => {
 
   const onLoginSuccess = (status) => {
     console.log("sds");
-    // if (status === 200) {
-    //   history.push("/dashboard");
-    // } else {
-    //   setErrors(status);
-    //   setLoading(false);
-    // }
+    if (status === 200) {
+      history.push("/successful");
+    } else {
+      setErrors(status);
+      setLoading(false);
+    }
   };
 
   const onSubmit = async (event) => {
@@ -142,6 +142,11 @@ const ResetPassword = () => {
                 </span>
               </div>
             </div>
+            <p
+              style={{ fontSize: "0.75rem", color: "red", textAlign: "center" }}
+            >
+              {errors["message"]}
+            </p>
             <ActionButton>
               {loading ? "loading" : "Reset Password"}
             </ActionButton>

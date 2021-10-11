@@ -11,7 +11,7 @@ export const logoutUser = async (callbackFn) => {
     const response = await axios.get(`${BASE_URL}logout`, config);
 
     callbackFn(response.status);
-    console.log(response.data);
+    // console.log(response.data);
   } catch (err) {
     console.log(err.response);
   }
